@@ -1,386 +1,379 @@
-# 🔍 Multi-Agent AI Research System
+# 🤖 Multi-Agent AI Research System
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-blue.svg">
-  <img src="https://img.shields.io/badge/LangChain-Agentic_AI-green">
-  <img src="https://img.shields.io/badge/Mistral-AI-orange">
-  <img src="https://img.shields.io/badge/Tavily-Web_Search-red">
-  <img src="https://img.shields.io/badge/License-MIT-yellow">
+
+<img src="https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python">
+
+<img src="https://img.shields.io/badge/LangChain-Agentic%20AI-green?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Mistral-AI-orange?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Tavily-Web%20Search-red?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
+
 </p>
 
-> **Deep Research Agent** is an AI-powered **Multi-Agent Research System** built using **LangChain**, **Mistral AI**, **Tavily Search API**, and **BeautifulSoup**.  
-> It autonomously researches any topic by coordinating multiple specialized AI agents and generates a structured research report with evaluation.
+
+<p align="center">
+
+An autonomous AI research assistant powered by  
+<b>Multi-Agent Architecture + LangChain + Mistral AI</b>
+
+</p>
+
 
 ---
 
-# 🚀 Features
+# 🌟 Overview
 
-- 🔎 Intelligent Web Search Agent
-- 📖 Automatic Website Reader & Scraper
-- ✍ AI Research Report Generator
-- 🧐 AI Critic & Evaluation System
-- 🌐 Real-time Web Search using Tavily
-- 📄 Structured Research Reports
-- 🔍 Automatic Source Collection
-- ⚡ Modular Multi-Agent Architecture
-- 🧩 Easy to Extend
-- 🤖 Powered by LangChain Agents
+**Multi-Agent AI Research System** is an intelligent research automation framework that uses multiple AI agents to search, analyze, summarize, and evaluate information from the web.
+
+Instead of relying on a single LLM call, this system divides tasks among specialized agents:
+
+- 🔎 Search Agent → Finds information
+- 📖 Reader Agent → Extracts useful content
+- ✍ Writer Agent → Generates reports
+- 🧐 Critic Agent → Evaluates quality
+
+
+The result is a structured, reliable, and AI-generated research report.
+
 
 ---
 
-# 🧠 Multi-Agent Workflow
+# ✨ Key Features
+
+## 🔍 Research Automation
+
+✔ Automated web research  
+✔ Source collection  
+✔ Website content extraction  
+
+
+## 🤖 Multi-Agent Intelligence
+
+✔ Specialized AI agents  
+✔ Agent collaboration workflow  
+✔ Modular architecture  
+
+
+## 📝 Report Generation
+
+✔ Structured reports  
+✔ AI summarization  
+✔ Research analysis  
+
+
+## 🧠 AI Evaluation
+
+✔ Quality scoring  
+✔ Error detection  
+✔ Improvement suggestions  
+
+
+---
+
+# 🏛 System Architecture
+
 
 ```
-                    User Query
-                        │
-                        ▼
-              🔎 Search Agent
-                 (Tavily API)
-                        │
-                        ▼
-              📖 Reader Agent
-            (Web Scraping Tool)
-                        │
-                        ▼
-              ✍ Writer Agent
+                  USER QUERY
+                      |
+                      |
+                      ▼
+
+              🔎 SEARCH AGENT
+              (Tavily API)
+
+                      |
+                      ▼
+
+              📖 READER AGENT
+          (BeautifulSoup Scraper)
+
+                      |
+                      ▼
+
+              ✍ WRITER AGENT
              (Mistral AI LLM)
-                        │
-                        ▼
-              🧐 Critic Agent
-              (Evaluation)
-                        │
-                        ▼
-              📄 Final Report
+
+                      |
+                      ▼
+
+              🧐 CRITIC AGENT
+              (AI Evaluation)
+
+                      |
+                      ▼
+
+             📄 FINAL REPORT
 ```
+
 
 ---
 
-# 🏗 Project Structure
+# 📂 Project Structure
+
 
 ```
 MULTI-AGENTS-SYSTEM
+
 │
-├── DEEP_RESEARCH_AGENT.py    # Main Application Entry Point
+├── DEEP_RESEARCH_AGENT.py
+│        └── Main Application
 │
-├── pipeline.py               # Complete Research Pipeline
+├── pipeline.py
+│        └── Agent Workflow Pipeline
 │
-├── agents.py                 # AI Agent Creation & Logic
+├── agents.py
+│        └── AI Agent Definitions
 │
-├── tools.py                  # Search and Scraping Tools
+├── tools.py
+│        └── Search & Scraping Tools
 │
-├── requirements.txt          # Python Dependencies
+├── requirements.txt
+│        └── Dependencies
 │
-├── LICENSE                   # MIT License
+├── LICENSE
 │
 ├── .gitignore
 │
 └── README.md
+
 ```
 
+
 ---
 
-# ⚙ Technologies Used
+# 🛠 Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Python | Core Programming Language |
+
+| Technology | Usage |
+|------------|-------|
+| Python | Core Development |
 | LangChain | Agent Framework |
-| Mistral AI | Large Language Model |
+| Mistral AI | LLM Reasoning |
 | Tavily API | Web Search |
 | BeautifulSoup | Web Scraping |
-| Requests | HTTP Requests |
-| python-dotenv | Environment Management |
+| Requests | HTTP Handling |
+| dotenv | Secret Management |
+
 
 ---
 
-# 🤖 AI Agents Overview
+# 🧩 Agent Workflow
+
 
 ## 🔎 Search Agent
 
-Responsible for:
+Responsibilities:
 
-- Searching relevant information
-- Finding useful sources
-- Collecting URLs
-- Gathering web information
+- Search web information
+- Find useful sources
+- Collect URLs
 
-**Technology**
-
-- Tavily Search API
 
 ---
 
 ## 📖 Reader Agent
 
-Responsible for:
+Responsibilities:
 
-- Reading webpages
-- Extracting useful content
-- Cleaning HTML data
-- Preparing research context
+- Extract webpage content
+- Clean HTML data
+- Prepare research context
 
-**Technology**
-
-- BeautifulSoup
-- Requests
 
 ---
 
 ## ✍ Writer Agent
 
-Responsible for:
+Responsibilities:
 
-- Processing collected information
-- Creating structured research reports
-- Summarizing important findings
+- Analyze gathered information
+- Generate structured reports
+- Summarize findings
 
-Generated report contains:
-
-- Introduction
-- Key Insights
-- Analysis
-- Conclusion
-- Sources
 
 ---
 
 ## 🧐 Critic Agent
 
-Evaluates generated reports:
+Responsibilities:
 
-- Research quality score
-- Accuracy checking
-- Missing information detection
-- Improvement suggestions
-- Final evaluation
+- Review generated report
+- Find missing information
+- Provide quality feedback
+
 
 ---
 
-# 📦 Installation
+# ⚙ Installation
 
-Clone this repository:
+
+Clone repository:
 
 ```bash
 git clone https://github.com/priteshbeladiya07/MULTI-AGENTS-SYSTEM.git
 ```
 
-Move into project directory:
+
+Navigate:
 
 ```bash
 cd MULTI-AGENTS-SYSTEM
 ```
 
-Install dependencies:
+
+Install packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
+
 ---
 
-# 🔑 Environment Variables
+# 🔐 Environment Setup
 
-Create a `.env` file in the project directory.
 
-Add:
+Create `.env` file:
+
 
 ```env
-TAVILY_API_KEY=your_tavily_api_key
+MISTRAL_API_KEY=your_api_key
 
-MISTRAL_API_KEY=your_mistral_api_key
+TAVILY_API_KEY=your_api_key
 ```
+
 
 ---
 
-# ▶ Running the Project
+# ▶ Run Application
 
-Run the main application:
+
+Start research agent:
+
 
 ```bash
 python DEEP_RESEARCH_AGENT.py
 ```
 
-or run pipeline directly:
+
+or
+
 
 ```bash
 python pipeline.py
 ```
 
+
 ---
 
-# 💬 Example
+# 🖥 Example Flow
+
 
 ### Input
 
 ```
-Future of Artificial Intelligence
+Impact of Artificial Intelligence on Healthcare
 ```
 
-### Processing Pipeline
+
+### AI Processing
+
 
 ```
-User Query
+Question
 
-↓
+ ↓
 
-Search Agent
+Search
 
-↓
+ ↓
 
-Reader Agent
+Read Sources
 
-↓
+ ↓
 
-Writer Agent
+Generate Report
 
-↓
+ ↓
 
-Critic Agent
+Critic Evaluation
 
-↓
+ ↓
 
-Final Research Report
+Final Answer
 ```
 
-### Output
-
-```
-✔ Detailed Research Report
-
-✔ Important Findings
-
-✔ Sources
-
-✔ Research Evaluation
-
-✔ Improvement Suggestions
-```
 
 ---
 
-# 🌟 Future Improvements
+# 🚀 Future Roadmap
 
-- 🎨 Streamlit Interactive Dashboard
-- 🔗 LangGraph Agent Workflow
-- 🧠 Memory Support
-- 📄 PDF Report Export
-- 📚 Multi-document Research
-- 🔖 Citation Generation
-- 🖼 Image Extraction
-- 📥 Report Download Feature
-- 🤖 Multiple LLM Support
-- 📊 Agent Monitoring Dashboard
 
----
+- [ ] Streamlit UI Dashboard
+- [ ] LangGraph Integration
+- [ ] Memory System
+- [ ] PDF Export
+- [ ] Citation Generator
+- [ ] Multi-Language Research
+- [ ] Agent Monitoring
+- [ ] Multiple LLM Support
 
-# 📸 Screenshots
-
-Add application screenshots here:
-
-```
-screenshots/
-
-├── dashboard.png
-├── workflow.png
-└── report.png
-```
 
 ---
 
-# 🛠 Requirements
+# 📚 Skills Demonstrated
 
-- Python 3.11+
-- Tavily API Key
-- Mistral AI API Key
-- Internet Connection
 
----
+Through this project:
 
-# 📚 Learning Objectives
-
-This project demonstrates:
-
-- Multi-Agent AI Systems
-- LangChain Agents
-- Agent Collaboration
-- Tool Calling
+- Multi-Agent AI Development
+- LangChain Framework
+- LLM Application Design
 - Prompt Engineering
-- Web Search Integration
-- Web Scraping
-- LLM Application Development
-- AI Evaluation Pipelines
+- AI Tool Calling
+- Web Automation
+- Research Automation
 
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-Steps:
-
-1. Fork this repository
-
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit changes
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push changes
-
-```bash
-git push origin feature-name
-```
-
-5. Create Pull Request
-
----
-
-# ⭐ Support
-
-If you like this project:
-
-⭐ Star the repository
-
-🍴 Fork it
-
-📢 Share it
 
 ---
 
 # 👨‍💻 Author
 
-## **Pritesh Beladiya**
+
+## Pritesh Beladiya
+
 
 🎓 Electronics & Communication Engineering Student
 
-💡 Interested in:
-
-- Artificial Intelligence
-- Generative AI
-- LangChain
-- Multi-Agent Systems
-- AI Automation
+💡 AI • Generative AI • LangChain • Agentic Systems
 
 
 GitHub:
 
 https://github.com/priteshbeladiya07
 
+
 ---
 
 # 📜 License
 
-This project is licensed under the **MIT License**.
+
+Distributed under the MIT License.
+
 
 ---
 
 <p align="center">
-Made with ❤️ using Python, LangChain, Mistral AI & Tavily
+
+⭐ If you like this project, consider giving it a star!
+
+<br>
+
+Made with ❤️ using Python + LangChain + Mistral AI
+
 </p>
