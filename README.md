@@ -19,7 +19,6 @@
 
 An autonomous AI research assistant powered by  
 <b>Multi-Agent Architecture + LangChain + Mistral AI</b>
-
 </p>
 
 
